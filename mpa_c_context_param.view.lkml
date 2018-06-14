@@ -15,9 +15,12 @@ view: mpa_c_context_param {
     type: count
     drill_fields: [context_name]
   }
+<<<<<<< HEAD
 
   measure: count1 {
     type: count
     drill_fields: [context_value]
   }
+=======
+>>>>>>> branch 'dev-sandeep-mora-msxw' of git@github.com:sandeepmora/looker.git
 }
