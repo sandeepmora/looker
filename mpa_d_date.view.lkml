@@ -1,4 +1,5 @@
 view: mpa_d_date {
+
   sql_table_name: POC_TABLES.MPA_D_DATE ;;
 
   dimension_group: date {
@@ -225,6 +226,7 @@ view: mpa_d_date {
     type: string
     sql: ${TABLE}."YEAR_WEEK_NAME" ;;
   }
+
 
   measure: count {
     type: count

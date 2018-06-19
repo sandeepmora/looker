@@ -1,4 +1,5 @@
 view: mpa_d_company {
+
   sql_table_name: POC_TABLES.MPA_D_COMPANY ;;
 
   dimension: annual_revenue {
@@ -266,6 +267,7 @@ view: mpa_d_company {
   dimension: x_9_use_case__a_ {
     type: string
     sql: ${TABLE}."X_9_USE_CASE__A_" ;;
+
   }
 
   measure: count {

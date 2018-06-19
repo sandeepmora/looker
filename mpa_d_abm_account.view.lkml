@@ -171,6 +171,7 @@ view: mpa_d_abm_account {
       year
     ]
     sql: ${TABLE}."UPDATED_AT" ;;
+
   }
 
   measure: count {

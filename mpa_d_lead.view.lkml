@@ -1,4 +1,5 @@
 view: mpa_d_lead {
+
   sql_table_name: POC_TABLES.MPA_D_LEAD ;;
 
   dimension: abm_account_key {
@@ -797,5 +798,6 @@ view: mpa_d_lead {
   measure: count {
     type: count
     drill_fields: [name, x_2_program_that_captured_name, x_2_globalhqnaicsname, x_2_naicsname]
+
   }
 }

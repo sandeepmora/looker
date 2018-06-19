@@ -160,6 +160,7 @@ view: mpa_d_email {
   dimension: workspace_source_id {
     type: number
     sql: ${TABLE}."WORKSPACE_SOURCE_ID" ;;
+
   }
 
   measure: count {

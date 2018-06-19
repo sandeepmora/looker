@@ -27,31 +27,7 @@ explore: mpa_d_email {}
 
 explore: mpa_d_email_campaign {}
 
-explore: mpa_d_etl_history {}
-
-explore: mpa_d_hour {}
-
 explore: mpa_d_lead {}
-
-explore: mpa_d_lead_owner {}
-
-explore: mpa_d_lead_partition {}
-
-explore: mpa_d_lead_source {}
-
-explore: mpa_d_lead_status {}
-
-explore: mpa_d_link {}
-
-explore: mpa_d_program {}
-
-explore: mpa_d_revenue_model_cycle {}
-
-explore: mpa_d_revenue_model_version {}
-
-explore: mpa_d_revenue_stage {}
-
-explore: mpa_d_score {}
 
 explore: mpa_f_email_activity {}
 
