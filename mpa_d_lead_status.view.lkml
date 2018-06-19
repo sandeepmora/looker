@@ -1,4 +1,5 @@
 view: mpa_d_lead_status {
+
   sql_table_name: POC_TABLES.MPA_D_LEAD_STATUS ;;
 
   dimension: category {
@@ -57,6 +58,7 @@ view: mpa_d_lead_status {
       year
     ]
     sql: ${TABLE}."UPDATED_AT" ;;
+
   }
 
   measure: count {

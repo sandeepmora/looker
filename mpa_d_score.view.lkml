@@ -1,4 +1,5 @@
 view: mpa_d_score {
+
   sql_table_name: POC_TABLES.MPA_D_SCORE ;;
 
   dimension: category {
@@ -57,6 +58,7 @@ view: mpa_d_score {
       year
     ]
     sql: ${TABLE}."UPDATED_AT" ;;
+
   }
 
   measure: count {

@@ -1,5 +1,5 @@
 view: mpa_d_date {
-  sql_table_name: POC_TABLES.MPA_D_DATE ;;
+sql_table_name: POC_TABLES.MPA_D_DATE ;;
 
   dimension_group: date {
     type: time
@@ -224,8 +224,8 @@ view: mpa_d_date {
   dimension: year_week_name {
     type: string
     sql: ${TABLE}."YEAR_WEEK_NAME" ;;
-  }
 
+}
   measure: count {
     type: count
     drill_fields: [detail*]

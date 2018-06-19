@@ -1,4 +1,5 @@
 view: mpa_d_lead_source {
+
   sql_table_name: POC_TABLES.MPA_D_LEAD_SOURCE ;;
 
   dimension: category {
@@ -57,6 +58,7 @@ view: mpa_d_lead_source {
       year
     ]
     sql: ${TABLE}."UPDATED_AT" ;;
+
   }
 
   measure: count {

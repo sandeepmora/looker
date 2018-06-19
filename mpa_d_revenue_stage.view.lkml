@@ -1,4 +1,5 @@
 view: mpa_d_revenue_stage {
+
   sql_table_name: POC_TABLES.MPA_D_REVENUE_STAGE ;;
 
   dimension: aggregation {
@@ -140,6 +141,7 @@ view: mpa_d_revenue_stage {
       year
     ]
     sql: ${TABLE}."UPDATED_AT" ;;
+
   }
 
   measure: count {

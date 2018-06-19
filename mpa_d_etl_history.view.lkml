@@ -1,4 +1,5 @@
 view: mpa_d_etl_history {
+
   sql_table_name: POC_TABLES.MPA_D_ETL_HISTORY ;;
 
   dimension: description {
@@ -100,6 +101,7 @@ view: mpa_d_etl_history {
   dimension: warehouse_version {
     type: string
     sql: ${TABLE}."WAREHOUSE_VERSION" ;;
+
   }
 
   measure: count {

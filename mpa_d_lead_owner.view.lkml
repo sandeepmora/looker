@@ -1,4 +1,5 @@
 view: mpa_d_lead_owner {
+
   sql_table_name: POC_TABLES.MPA_D_LEAD_OWNER ;;
 
   dimension_group: created {
@@ -90,6 +91,7 @@ view: mpa_d_lead_owner {
       year
     ]
     sql: ${TABLE}."UPDATED_AT" ;;
+
   }
 
   measure: count {

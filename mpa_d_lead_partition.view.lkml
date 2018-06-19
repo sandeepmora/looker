@@ -1,4 +1,5 @@
 view: mpa_d_lead_partition {
+
   sql_table_name: POC_TABLES.MPA_D_LEAD_PARTITION ;;
 
   dimension_group: created {
@@ -80,6 +81,7 @@ view: mpa_d_lead_partition {
       year
     ]
     sql: ${TABLE}."UPDATED_AT" ;;
+
   }
 
   measure: count {

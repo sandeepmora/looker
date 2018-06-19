@@ -1,4 +1,5 @@
 view: mpa_d_hour {
+
   sql_table_name: POC_TABLES.MPA_D_HOUR ;;
 
   dimension: hour_key {
@@ -9,6 +10,7 @@ view: mpa_d_hour {
   dimension: hour_name {
     type: string
     sql: ${TABLE}."HOUR_NAME" ;;
+
   }
 
   measure: count {

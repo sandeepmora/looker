@@ -1,4 +1,5 @@
 view: mpa_d_link {
+
   sql_table_name: POC_TABLES.MPA_D_LINK ;;
 
   dimension_group: created {
@@ -23,6 +24,7 @@ view: mpa_d_link {
   dimension: link_url {
     type: string
     sql: ${TABLE}."LINK_URL" ;;
+
   }
 
   measure: count {

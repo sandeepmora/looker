@@ -1,4 +1,5 @@
 view: mpa_f_email_activity {
+
   sql_table_name: POC_TABLES.MPA_F_EMAIL_ACTIVITY ;;
 
   dimension: campaign_key {
@@ -210,6 +211,7 @@ view: mpa_f_email_activity {
       year
     ]
     sql: ${TABLE}."UPDATED_AT" ;;
+
   }
 
   measure: count {

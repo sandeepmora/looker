@@ -1,4 +1,5 @@
 view: mpa_d_revenue_model_version {
+
   sql_table_name: POC_TABLES.MPA_D_REVENUE_MODEL_VERSION ;;
 
   dimension_group: approved_date {
@@ -148,6 +149,7 @@ view: mpa_d_revenue_model_version {
       year
     ]
     sql: ${TABLE}."UPDATED_AT" ;;
+
   }
 
   measure: count {

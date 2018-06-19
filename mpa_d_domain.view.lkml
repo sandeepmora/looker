@@ -1,4 +1,5 @@
 view: mpa_d_domain {
+
   sql_table_name: POC_TABLES.MPA_D_DOMAIN ;;
 
   dimension_group: created {
@@ -23,6 +24,7 @@ view: mpa_d_domain {
   dimension: domain_name {
     type: string
     sql: ${TABLE}."DOMAIN_NAME" ;;
+
   }
 
   measure: count {

@@ -1,4 +1,5 @@
 view: mpa_d_program {
+
   sql_table_name: POC_TABLES.MPA_D_PROGRAM ;;
 
   dimension: analytics_option {
@@ -158,6 +159,7 @@ view: mpa_d_program {
   dimension: workspace_source_id {
     type: number
     sql: ${TABLE}."WORKSPACE_SOURCE_ID" ;;
+
   }
 
   measure: count {
