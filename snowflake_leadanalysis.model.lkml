@@ -42,4 +42,20 @@ explore: mpa_f_email_activity {
     relationship: many_to_one
     sql_on: ${link_key} = ${link_key} ;;
   }
+  join: mpa_d_date {
+    relationship: many_to_one
+    sql_on: ${mpa_d_date.date_date} = ${mpa_f_email_activity.hard_bounced_date_key}
+           AND
+          ${mpa_d_date.date_date} = ${mpa_f_email_activity.opened_date_key}
+           AND
+          ${mpa_d_date.date_date} = ${mpa_f_email_activity.clicked_date_key}
+           AND
+          ${mpa_d_date.date_date} = ${mpa_f_email_activity.unsubscribed_date_key}
+           AND
+          ${mpa_d_date.date_date} = ${mpa_f_email_activity.complaint_date_key}
+           AND
+          ${mpa_d_date.date_date} = ${mpa_f_email_activity.sent_date_key}
+          AND
+         ${mpa_d_date.date_date} = ${mpa_f_email_activity.delivered_date_key} ;;
+  }
 }
