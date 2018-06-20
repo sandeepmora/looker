@@ -65,7 +65,7 @@ view: mpa_d_lead {
     description: "Lead's Email Address"
     #sql: CASE WHEN ${TABLE}.email IS  THEN "Not Available" ELSE ${TABLE}.email
     html:
-    {% if value == null %}
+    {% if value == ∅ %}
     <p style="color: black; background-color: lightgreen; font-size:100%; text-align:center">"null value"</p>
     {% else %}
     <p style="color: black">{{ rendered_value }}</p>
