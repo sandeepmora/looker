@@ -112,7 +112,7 @@ view: mpa_d_lead {
   dimension: name {
     type: string
     label: "Full Name"
-    sql: ${TABLE}.name ;;
+    sql: coalesce(${TABLE}.name, 'Not Available') ;;
     order_by_field: name
   }
 
