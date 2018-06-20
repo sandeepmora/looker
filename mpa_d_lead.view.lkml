@@ -63,7 +63,7 @@ view: mpa_d_lead {
     type: string
     label: "Email Address"
     description: "Lead's Email Address"
-    sql: ${TABLE}.email ;;
+    sql: coalesce(${TABLE}.email, 'Not Available') ;;
   }
 
   dimension: is_black_listed {
