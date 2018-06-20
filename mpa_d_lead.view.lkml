@@ -1,4 +1,5 @@
 view: mpa_d_lead {
+
   sql_table_name: mpa_d_lead ;;
 
 ##### Join Keys #####
@@ -415,6 +416,7 @@ view: mpa_d_lead {
 #     type: string
 #     sql: ${TABLE}.X_692_vijay ;;
 #   }
+
 
 
 }

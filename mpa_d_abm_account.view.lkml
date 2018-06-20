@@ -1,4 +1,5 @@
 view: mpa_d_abm_account {
+
   sql_table_name: mpa_d_abm_account ;;
 
   dimension: abm_account_key {
@@ -122,5 +123,6 @@ view: mpa_d_abm_account {
 #     type: string
 #     sql: ${TABLE}.state ;;
 #   }
+
 
 }

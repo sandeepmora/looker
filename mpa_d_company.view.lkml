@@ -1,4 +1,5 @@
 view: mpa_d_company {
+
   sql_table_name: mpa_d_company ;;
 
 ##### Join Keys #####
@@ -113,4 +114,5 @@ view: mpa_d_company {
   #   type: number
   #   sql: ${TABLE}.X_691_simon_sfdc_cust_acct ;;
   # }
+
 }

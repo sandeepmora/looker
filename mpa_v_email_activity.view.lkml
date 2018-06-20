@@ -1,4 +1,5 @@
 view: mpa_v_email_activity {
+
   sql_table_name: mpa_v_email_activity ;;
 
 ##### Join Keys #####
@@ -315,5 +316,6 @@ view: mpa_v_email_activity {
     value_format: "0.00%"
     sql: coalesce(${mpa_v_email_activity.unique_clicks_count},0) / ${mpa_v_email_activity.delivered_count};;
   }
+
 
 }

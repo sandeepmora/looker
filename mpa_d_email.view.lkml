@@ -1,4 +1,5 @@
 view: mpa_d_email {
+
   sql_table_name: mpa_d_email ;;
 
   ##### Join Keys #####
@@ -190,6 +191,7 @@ view: mpa_d_email {
       year
     ]
     sql: ${TABLE}.updated_at ;;
+
   }
 
   measure: count {

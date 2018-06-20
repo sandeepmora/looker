@@ -1,10 +1,5 @@
-view: mpa_d_email_campaign {
-  sql_table_name: simon12_warehouse.mpa_d_email_campaign ;;
-
-  dimension: campaign_key {
-    type: number
-    sql: ${TABLE}.campaign_key ;;
-  }
+view: mpa_v_lead_owner {
+  sql_table_name: POC_TABLES.MPA_V_LEAD_OWNER ;;
 
   dimension_group: created {
     type: time
@@ -17,32 +12,37 @@ view: mpa_d_email_campaign {
       quarter,
       year
     ]
-    sql: ${TABLE}.created_at ;;
+    sql: ${TABLE}."CREATED_AT" ;;
+  }
+
+  dimension: email {
+    type: string
+    sql: ${TABLE}."EMAIL" ;;
   }
 
   dimension: etl_history_key {
     type: number
-    sql: ${TABLE}.etl_history_key ;;
+    sql: ${TABLE}."ETL_HISTORY_KEY" ;;
   }
 
   dimension: is_active {
-    type: yesno
-    sql: ${TABLE}.is_active ;;
-  }
-
-  dimension: is_visible {
-    type: yesno
-    sql: ${TABLE}.is_visible ;;
-  }
-
-  dimension: program_key {
     type: number
-    sql: ${TABLE}.program_key ;;
+    sql: ${TABLE}."IS_ACTIVE" ;;
   }
 
-  dimension: program_source_id {
+  dimension: job_title {
     type: string
-    sql: ${TABLE}.program_source_id ;;
+    sql: ${TABLE}."JOB_TITLE" ;;
+  }
+
+  dimension: lead_owner_key {
+    type: number
+    sql: ${TABLE}."LEAD_OWNER_KEY" ;;
+  }
+
+  dimension: name {
+    type: string
+    sql: ${TABLE}."NAME" ;;
   }
 
   dimension_group: source_created {
@@ -56,12 +56,12 @@ view: mpa_d_email_campaign {
       quarter,
       year
     ]
-    sql: ${TABLE}.source_created_at ;;
+    sql: ${TABLE}."SOURCE_CREATED_AT" ;;
   }
 
   dimension: source_id {
     type: string
-    sql: ${TABLE}.source_id ;;
+    sql: ${TABLE}."SOURCE_ID" ;;
   }
 
   dimension_group: source_updated {
@@ -75,7 +75,7 @@ view: mpa_d_email_campaign {
       quarter,
       year
     ]
-    sql: ${TABLE}.source_updated_at ;;
+    sql: ${TABLE}."SOURCE_UPDATED_AT" ;;
   }
 
   dimension_group: updated {
@@ -89,11 +89,11 @@ view: mpa_d_email_campaign {
       quarter,
       year
     ]
-    sql: ${TABLE}.updated_at ;;
+    sql: ${TABLE}."UPDATED_AT" ;;
   }
 
   measure: count {
     type: count
-    drill_fields: []
+    drill_fields: [name]
   }
 }
