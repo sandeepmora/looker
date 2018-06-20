@@ -63,13 +63,7 @@ view: mpa_d_lead {
     type: string
     label: "Email Address"
     description: "Lead's Email Address"
-    sql: ${TABLE}.email
-    html:
-   if Email Address = ∅
-   then Not Available
-    else
-    Email Address
-    endif ;;
+    sql: CASE WHEN ${TABLE}.email IS NULL THEN "Not Available" ELSE ${TABLE}.email ;;
   }
 
 
