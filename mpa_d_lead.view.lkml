@@ -105,7 +105,7 @@ view: mpa_d_lead {
   dimension: job_title {
     type: string
     label:  "Job Title"
-    sql: ${TABLE}.job_title ;;
+    sql: coalesce(${TABLE}.job_title, 'Not Available') ;;
 
   }
 
