@@ -106,6 +106,7 @@ view: mpa_d_lead {
     type: string
     label:  "Job Title"
     sql: ${TABLE}.job_title ;;
+
   }
 
   dimension: name {
