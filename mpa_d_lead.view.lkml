@@ -66,7 +66,7 @@ view: mpa_d_lead {
     #sql: CASE WHEN ${TABLE}.email IS  THEN "Not Available" ELSE ${TABLE}.email
     html:
     {% if mpa_d_lead.email %}
-     email
+     {{rendered_value}}
 {% else %}
 null value
 {% endif %};;
