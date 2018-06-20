@@ -63,8 +63,15 @@ view: mpa_d_lead {
     type: string
     label: "Email Address"
     description: "Lead's Email Address"
-    sql: coalesce(${TABLE}.email, 'Not Available') ;;
+    sql: ${TABLE}.email
+    html:
+   if Email Address = ∅
+   then Not Available
+    else
+    Email Address
+    endif ;;
   }
+
 
   dimension: is_black_listed {
     type: yesno
